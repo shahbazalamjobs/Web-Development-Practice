@@ -1,8 +1,9 @@
 # Background Image in CSS
 
 - Backgroun Image Properties
-| Property             | Description                                                                                      |
-| --------------------|-------------------------------------------------------------------------------------------------|
+
+| Property | Description |
+| ---|-----|
 | `background-image`   | Used to add a background image to an HTML element                                               |
 | `background-repeat`  | Controls how the image is repeated. Values include `repeat`, `repeat-x`, `repeat-y`, and `no-repeat` |
 | `background-position`| Controls the position of the background image. Values include `left top`, `center center`, and `right bottom` |
@@ -12,6 +13,7 @@
 | `background`         | Shorthand property that sets multiple background properties at once |
 
 - Background repeat attributes
+
 | Attribute | Description |
 | --- | --- |
 | `background-repeat` | Controls how a background image is repeated. |
