@@ -12,6 +12,8 @@
 | `background-attachment`| Controls whether the background image scrolls with the element or stays fixed |
 | `background`         | Shorthand property that sets multiple background properties at once |
 
+**********
+
 - Background repeat attributes
 
 | Attribute | Description |
@@ -24,7 +26,7 @@
 | Examples | `background-repeat: repeat;`<br>`background-repeat: no-repeat;`<br>`background-repeat: repeat-x;`<br>`background-repeat: repeat-y;` |
 
 
-
+*****
 
 1. Background Image to cover full screen
 ```
