@@ -23,7 +23,7 @@
 | `repeat-y` value | Repeats the image only vertically. |
 | Examples | `background-repeat: repeat;`<br>`background-repeat: no-repeat;`<br>`background-repeat: repeat-x;`<br>`background-repeat: repeat-y;` |
 
-![image](https://user-images.githubusercontent.com/125631878/233711044-dbdcfce1-3d47-4582-9659-cbf2974cf1ac.png)
+
 
 
 1. Background Image to cover full screen
