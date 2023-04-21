@@ -1,6 +1,6 @@
 # Background Image in CSS
 
-- Backgroun Image Properties
+- Background Image Properties
 
 | Property | Description |
 | ---|-----|
