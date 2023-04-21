@@ -28,7 +28,8 @@
 
 *****
 
-1. Background Image to cover full screen <br>
+1. Background Image to cover full screen 
+
 i. <br>
 ```
   html,body {
