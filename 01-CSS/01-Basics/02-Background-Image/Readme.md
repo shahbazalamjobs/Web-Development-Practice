@@ -7,7 +7,7 @@ html,body {
   margin: 0;
 }
 
-img.backgroundImg {
+img.background {
   height: 100%;
   width: 100%;
   object-fit: cover;
