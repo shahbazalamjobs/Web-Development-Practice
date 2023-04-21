@@ -1,6 +1,9 @@
 # Background Image in CSS
 
-## Background Image to cover full screen
+1. Background Image to cover full screen
+- The object-fit property is used to control how an image fits inside its container. 
+- When we set it to cover, the image is scaled to fit the container as large as possible without being stretched or cropped. 
+- This means that the image fills the available space completely, while maintaining its aspect ratio, which ensures that the image does not look distorted or stretched out.
 
 ```
 html,body {
