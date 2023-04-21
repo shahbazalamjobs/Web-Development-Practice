@@ -29,6 +29,7 @@
 *****
 
 1. Background Image to cover full screen
+i. <br>
 ```
 html,body {
   height: 100%;
@@ -40,6 +41,18 @@ img.background {
   width: 100%;
   object-fit: cover;
 }
+```
+
+ii. <br>
+```
+  .container {
+      background-image: url("Image.png");
+      height: 100vh;
+      background-repeat: no-repeat;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+  }
 ```
 
 - The object-fit property is used to control how an image fits inside its container. 
