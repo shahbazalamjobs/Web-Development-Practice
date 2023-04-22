@@ -26,7 +26,8 @@ body {
 ```
 ![image](https://user-images.githubusercontent.com/125631878/233771448-5d058420-da24-428f-813a-f8cac5dd025a.png)
 
-2.3
+2.3 Multiple background Images and grading
+
 ![image](https://user-images.githubusercontent.com/125631878/233791216-9033940d-3897-4ba4-92a7-55438bc95778.png)
 
 
