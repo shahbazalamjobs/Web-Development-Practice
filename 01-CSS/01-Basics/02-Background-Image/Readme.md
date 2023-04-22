@@ -9,6 +9,7 @@ body {
 ```
 
 2. Set background image
+
 2.1: Simple (but it repeats in all direction)
 ```
 body {
