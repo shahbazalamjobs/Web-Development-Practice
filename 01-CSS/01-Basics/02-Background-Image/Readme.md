@@ -61,6 +61,10 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 
 ![image](https://user-images.githubusercontent.com/125631878/233779909-01c6a4a1-0ed7-4384-8676-bff9d1437638.png)
 
+**********
+
+
+![image](https://user-images.githubusercontent.com/125631878/233788859-afac672c-028a-4d94-bdd0-efdfd8cdc889.png)
 
 **********
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
