@@ -1,12 +1,47 @@
 # Background Image in CSS
 
 ## Basics
-- Set background color to light blue
+1. Set background color to light blue
 ```
 body {
-      background-color: lightblue;
+  background-color: lightblue;
 }
 ```
+
+2. Set background image
+2.1: Simple (but it repeats in all direction)
+```
+body {
+  background: url(Image.jpg);
+}
+```
+![image](https://user-images.githubusercontent.com/125631878/233771417-11a74f88-a587-41b0-b812-93407f979d24.png)
+
+2.2 Simple but no repeat
+```
+body {
+  background: url(Image.jpg) no-repeat;
+}
+```
+![image](https://user-images.githubusercontent.com/125631878/233771448-5d058420-da24-428f-813a-f8cac5dd025a.png)
+
+2.3 
+
+
+
+
+## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
+
+- Use CSS sprites: CSS sprites allow you to combine multiple images into a single image, which can be downloaded with a single HTTP request. Then, you can use CSS to display the specific portion of the image you want as your background image. This reduces the number of HTTP requests made to the server, thus improving the page's load time.
+
+- Use data URIs: Instead of downloading a separate image file, you can encode the image data directly into the CSS file using data URIs. This technique can be useful for small images because it eliminates the need for a separate HTTP request.
+
+- Use a single background image for multiple elements: If you have several elements on a page that require the same background image, you can use a single image for all of them. This reduces the number of HTTP requests and can also save bandwidth.
+
+- Use lazy loading: Lazy loading is a technique where images are loaded only when they are needed, such as when they are in the viewport. This can reduce the number of HTTP requests made at page load time, which can improve page speed.
+
+- Use caching: Caching can be used to store images in the browser cache so that they don't have to be downloaded every time a page is loaded. This can reduce the number of HTTP requests and improve page speed for returning visitors.
+
 
 
 - Background Image Properties
