@@ -41,7 +41,7 @@ body {
   background: radial-gradient(circle, black, white);
 }
 ```
-![image](https://user-images.githubusercontent.com/125631878/233779713-878ae570-56ea-4726-ac70-ab63099acd0b.png)
+![image](https://user-images.githubusercontent.com/125631878/233780063-81aad872-bc36-486a-b1d6-5b9d9ea2490d.png)
 
 
 **********
