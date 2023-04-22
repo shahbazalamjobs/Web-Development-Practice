@@ -70,6 +70,21 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 
 
 **********
+## Background size
+- The background-size property controls the size of a background image within an element. It can take values such as auto, cover, contain, and a specific length or percentage value.
+- By default, the background image will be displayed at its original size. However, you can use the background-size property to resize the image to fit within the element, or to cover the entire element.
+- For one-value syntax, with values like %, em, px or auto the width of the image (height becomes 'auto')  (E.g. `backgroun-size: 50%` )
+- For two value syntax, 1st and 2nd are width and height respectively (E.g. `background-size: 50% auto;`)
+- For multiple backgrounds (background-size: values like `auto, auto;` `50%, 25%, 25%;` `6px, auto, contain;`)
+
+![image](https://user-images.githubusercontent.com/125631878/233790149-908704c1-55e8-48d0-b665-d70f4ccf6ad2.png)
+
+
+More detail: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+**********
+
+
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
 
 - Use CSS sprites: CSS sprites allow you to combine multiple images into a single image, which can be downloaded with a single HTTP request. Then, you can use CSS to display the specific portion of the image you want as your background image. This reduces the number of HTTP requests made to the server, thus improving the page's load time.
