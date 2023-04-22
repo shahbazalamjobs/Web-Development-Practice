@@ -65,6 +65,8 @@ body {
 - After downloading the single image, CSS is used to display the specific portion of the image needed for each element on the page. This technique significantly reduces the number of HTTP requests made to the server, which can improve the page's load time and overall performance.
 
 
+**********
+
 - Background Image Properties
 
 | Property | Description |
