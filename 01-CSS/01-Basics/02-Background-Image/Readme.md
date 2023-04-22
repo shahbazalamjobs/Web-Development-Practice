@@ -43,7 +43,14 @@ body {
 ![image](https://user-images.githubusercontent.com/125631878/233773530-5be1c57b-1186-431f-b5cd-a161e4bca9a9.png)
 
 **********
+[Note]: If background image fails to load or the browser doesn't support gradient then browser looks for fallback color
+```
+body {
+  background: url(sweettexture.jpg) blue;
+}
+```
 
+**********
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
 
 - Use CSS sprites: CSS sprites allow you to combine multiple images into a single image, which can be downloaded with a single HTTP request. Then, you can use CSS to display the specific portion of the image you want as your background image. This reduces the number of HTTP requests made to the server, thus improving the page's load time.
