@@ -42,8 +42,6 @@ body {
 ```
 ![image](https://user-images.githubusercontent.com/125631878/233773530-5be1c57b-1186-431f-b5cd-a161e4bca9a9.png)
 
-
-
 **********
 
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
