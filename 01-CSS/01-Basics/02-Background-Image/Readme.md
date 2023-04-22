@@ -62,9 +62,12 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 ![image](https://user-images.githubusercontent.com/125631878/233779909-01c6a4a1-0ed7-4384-8676-bff9d1437638.png)
 
 **********
+## Background Repeat
+- The background-repeat property controls how a background image is repeated within an element. It can take values such as repeat, repeat-x, repeat-y, no-repeat, space, and round.
+- The default value of background-repeat is repeat, which means that the background image will be repeated both horizontally and vertically to fill the entire element.
 
+![image](https://user-images.githubusercontent.com/125631878/233789478-706adb67-89cb-4eff-9d5e-7ce4fcafc8ab.png)
 
-![image](https://user-images.githubusercontent.com/125631878/233788859-afac672c-028a-4d94-bdd0-efdfd8cdc889.png)
 
 **********
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
