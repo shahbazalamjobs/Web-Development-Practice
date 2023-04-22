@@ -27,7 +27,7 @@ body {
 ![image](https://user-images.githubusercontent.com/125631878/233771448-5d058420-da24-428f-813a-f8cac5dd025a.png)
 
 2.3
-![image](https://user-images.githubusercontent.com/125631878/233791144-6b53463f-090f-44a0-b862-63af9356644f.png)
+![image](https://user-images.githubusercontent.com/125631878/233791216-9033940d-3897-4ba4-92a7-55438bc95778.png)
 
 
 3.1 Linear Gradients
