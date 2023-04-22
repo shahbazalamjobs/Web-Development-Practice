@@ -1,5 +1,14 @@
 # Background Image in CSS
 
+## Basics
+- Set background color to light blue
+```
+body {
+      background-color: lightblue;
+}
+```
+
+
 - Background Image Properties
 
 | Property | Description |
