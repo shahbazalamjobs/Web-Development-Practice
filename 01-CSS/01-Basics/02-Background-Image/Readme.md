@@ -48,7 +48,6 @@ body {
 ```
 ![image](https://user-images.githubusercontent.com/125631878/233780063-81aad872-bc36-486a-b1d6-5b9d9ea2490d.png)
 
-
 **********
 [Note]: If background image fails to load or the browser doesn't support gradient then browser looks for fallback color
 ```
@@ -73,7 +72,6 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 
 ![image](https://user-images.githubusercontent.com/125631878/233789478-706adb67-89cb-4eff-9d5e-7ce4fcafc8ab.png)
 
-
 **********
 ## Background size
 - The background-size property controls the size of a background image within an element. It can take values such as auto, cover, contain, and a specific length or percentage value.
@@ -84,11 +82,9 @@ url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
 
 ![image](https://user-images.githubusercontent.com/125631878/233790149-908704c1-55e8-48d0-b665-d70f4ccf6ad2.png)
 
-
 More detail: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 
 **********
-
 
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
 
@@ -108,7 +104,6 @@ More detail: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 
 - After downloading the single image, CSS is used to display the specific portion of the image needed for each element on the page. This technique significantly reduces the number of HTTP requests made to the server, which can improve the page's load time and overall performance.
 
-
 **********
 
 - Background Image Properties
@@ -124,20 +119,6 @@ More detail: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 | `background`         | Shorthand property that sets multiple background properties at once |
 
 **********
-
-- Background repeat attributes
-
-| Attribute | Description |
-| --- | --- |
-| `background-repeat` | Controls how a background image is repeated. |
-| Default value | `repeat`, which repeats the image both horizontally and vertically to cover the entire element. |
-| `no-repeat` value | Prevents the background image from being repeated, and it will only appear once in the element. |
-| `repeat-x` value | Repeats the image only horizontally. |
-| `repeat-y` value | Repeats the image only vertically. |
-| Examples | `background-repeat: repeat;`<br>`background-repeat: no-repeat;`<br>`background-repeat: repeat-x;`<br>`background-repeat: repeat-y;` |
-
-
-*****
 
 1. Background Image to cover full screen 
 
@@ -172,7 +153,6 @@ ii. <br>
   }
 ```
 
-
-
 ![image](https://user-images.githubusercontent.com/125631878/233698273-4e22c42e-3ce0-4552-b2a1-fe3da371aea5.png)
 
+**********
