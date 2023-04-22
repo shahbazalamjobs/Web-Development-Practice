@@ -32,6 +32,8 @@ body {
   background: linear-gradient(black, white);
 }
 ```
+![image](https://user-images.githubusercontent.com/125631878/233779197-f59836b5-b92b-4444-b5dc-689bb2b81d77.png)
+
 
 3.2 Radial Gradients
 ```
@@ -39,7 +41,8 @@ body {
   background: radial-gradient(circle, black, white);
 }
 ```
-![image](https://user-images.githubusercontent.com/125631878/233773530-5be1c57b-1186-431f-b5cd-a161e4bca9a9.png)
+![image](https://user-images.githubusercontent.com/125631878/233779713-878ae570-56ea-4726-ac70-ab63099acd0b.png)
+
 
 **********
 [Note]: If background image fails to load or the browser doesn't support gradient then browser looks for fallback color
@@ -48,6 +51,16 @@ body {
   background: url(sweettexture.jpg) blue;
 }
 ```
+
+4.1 Multiple background Images
+```
+background:
+url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/codepen.png) bottom center no-repeat,
+url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png) repeat;
+```
+
+![image](https://user-images.githubusercontent.com/125631878/233779909-01c6a4a1-0ed7-4384-8676-bff9d1437638.png)
+
 
 **********
 ## Several ways to reduce HTTP requests for background images. Here are a few techniques you can try:
