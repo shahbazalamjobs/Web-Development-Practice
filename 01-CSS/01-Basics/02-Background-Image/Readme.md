@@ -1,4 +1,4 @@
-# Background Image in CSS
+# Background in CSS
 
 ## Basics
 1. Set background color to light blue
@@ -26,8 +26,21 @@ body {
 ```
 ![image](https://user-images.githubusercontent.com/125631878/233771448-5d058420-da24-428f-813a-f8cac5dd025a.png)
 
-2.3 
+3.1 Linear Gradients
+```
+body {
+  background: linear-gradient(black, white);
+}
+```
+![image](https://user-images.githubusercontent.com/125631878/233773260-dd974f95-e2b5-4503-a69e-668b695e5e64.png)
 
+3.2 Radial Gradients
+```
+body {
+  background: radial-gradient(circle, black, white);
+}
+```
+![image](https://user-images.githubusercontent.com/125631878/233773530-5be1c57b-1186-431f-b5cd-a161e4bca9a9.png)
 
 
 
@@ -43,6 +56,11 @@ body {
 
 - Use caching: Caching can be used to store images in the browser cache so that they don't have to be downloaded every time a page is loaded. This can reduce the number of HTTP requests and improve page speed for returning visitors.
 
+**********
+
+- Sprite: CSS sprites help in reducing HTTP requests by combining multiple small images into a single larger image. By doing this, the browser only needs to make one HTTP request to download the single larger image, rather than multiple HTTP requests to download each individual small image.
+
+- After downloading the single image, CSS is used to display the specific portion of the image needed for each element on the page. This technique significantly reduces the number of HTTP requests made to the server, which can improve the page's load time and overall performance.
 
 
 - Background Image Properties
