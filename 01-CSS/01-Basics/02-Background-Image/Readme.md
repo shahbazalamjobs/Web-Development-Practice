@@ -32,7 +32,6 @@ body {
   background: linear-gradient(black, white);
 }
 ```
-![image](https://user-images.githubusercontent.com/125631878/233773260-dd974f95-e2b5-4503-a69e-668b695e5e64.png)
 
 3.2 Radial Gradients
 ```
