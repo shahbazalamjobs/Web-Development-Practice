@@ -28,7 +28,7 @@ body {
 
 2.3 Multiple background Images and grading
 
-![image](https://user-images.githubusercontent.com/125631878/233791216-9033940d-3897-4ba4-92a7-55438bc95778.png)
+![image](https://user-images.githubusercontent.com/125631878/233791307-cd7b985c-ee09-44bf-8230-f70ccf4648ba.png)
 
 
 3.1 Linear Gradients
