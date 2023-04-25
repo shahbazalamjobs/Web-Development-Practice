@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    background-color: rgb(24, 205, 229);
+    padding: 20px;
+    width: 20%;
+    float: left;
+    color: white;
+}
+
+.middle {
+    background: rgb(108, 68, 228);
+    padding: 20px;
+    width: 60%;
+    float: left;
+    color: white;
+}
+
+.right {
+    background-color: rgb(48, 12, 114);
+    padding: 20px;
+    width: 20%;
+    float: left;
+    color: white;
+}
+
+@media screen and (max-width: 800px) {
+
+    .left,
+    .middle,
+    .right {
+        width: 100%;
+    }
+}   
