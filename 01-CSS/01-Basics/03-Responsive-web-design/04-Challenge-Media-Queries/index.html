@@ -19,8 +19,9 @@ TODO: Change the background color for each device
     }
 
     /*
-    Here we have Error of  not having proper sequence of statements
-
+    1. Here we have Error of  not having proper sequence of statements which caused to have single color background irrespective of width
+    2. Dont use screen attribute in media queries
+    
     @media screen and ("min-width : 1601px") {
       body {
         background-color: seagreen;
@@ -54,25 +55,25 @@ TODO: Change the background color for each device
     
     */
 
-    @media screen and (max-width : 480px) {
+    @media (max-width : 480px) {
       body {
         background-color: yellow;
       }
     }
 
-    @media screen and (min-width : 481px) and (max-width : 1200px) {
+    @media (min-width : 481px) and (max-width : 1200px) {
       body {
         background-color: powderblue;
       }
     }
 
-    @media screen and (min-width : 1201px) and (max-width : 1600px) {
+    @media (min-width : 1201px) and (max-width : 1600px) {
       body {
         background-color: limegreen;
       }
     }
 
-    @media screen and (min-width : 1601px) {
+    @media (min-width : 1601px) {
       body {
         background-color: seagreen;
       }
