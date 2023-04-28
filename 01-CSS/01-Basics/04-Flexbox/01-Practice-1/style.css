@@ -27,6 +27,8 @@
     flex-flow: row wrap;
     */
 
+    /* [Note:] Property of containers are above  */
+
 }
 
 .item {
@@ -60,4 +62,9 @@
     /*
     flex-grow: 3; 
     */
+
+    /*
+    [Note:] Property of items are above
+    */
+
 }
