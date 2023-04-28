@@ -14,7 +14,7 @@
     */
 
     /*
-        align-items: center / flex-start /flex-end;   
+    align-items: center / flex-start /flex-end;   
     */
 
     /*  
@@ -23,8 +23,8 @@
     */
 
     /*  
-        shortcut for flex direction and flex-wrap
-        flex-flow: row wrap;
+    shortcut for flex direction and flex-wrap
+    flex-flow: row wrap;
     */
 
 }
@@ -38,14 +38,13 @@
     height: 100px;
 }
 
-
-/* 
-        order is used for arranging in order with highest order digit in last of order  
+    /* 
+    order is used for arranging in order with highest order digit in last of order  
     */
 
 .item1 {
 
-    /*
+    /*     
     increases size in respect to default flex-grow i.e. 1
     flex-grow: 2; 
     */
@@ -59,6 +58,6 @@
 .item2 {
 
     /*
-        flex-grow: 3; 
+    flex-grow: 3; 
     */
 }
