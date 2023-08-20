@@ -9,6 +9,10 @@ console.log("\n", currentDateTime);
 
 // 2. Server gives current date time on request of client 
 
+// importing modules 
+import { myDateTime } from './myFirstmodule.js';
+import http from "http";
+
 // Get the current date and time 
 const currentDateTime = myDateTime();
 console.log("\n", currentDateTime);
