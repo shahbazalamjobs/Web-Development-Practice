@@ -14,3 +14,5 @@ const server = http.createServer((req, res) => {
 server.listen(port, () => {
     console.log(`Your server is running at ${port}`);
 });
+
+// Show us the o/p: of demo.html file 
