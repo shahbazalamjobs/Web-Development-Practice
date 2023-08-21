@@ -72,3 +72,9 @@ console.log(mathUtils.subtract(10, 4)); // Output: 6
 
 - Please note that the ES6 example requires proper environment setup and module loading configuration, while the CommonJS example is suitable for the default behavior in Node.js.
 
+---
+
+## Split the Query String
+
+URL parsing is the process of breaking down a web address (URL) into its individual parts, like the protocol, domain, path, query parameters, and more. This helps software understand and work with URLs for tasks like fetching web content, creating links, and handling data from web addresses.
+
