@@ -33,6 +33,17 @@ server.listen(port, () => {
 
 /*
 
+o/p displays respective html content at: 
+http://localhost:8080/summer.html   
+http://localhost:8080/winter.html   
+http://localhost:8080/hello.html   
+
+*/
+
+
+
+/*
+
 "." + q.pathname: The dot (.) is a common way to refer to the current directory in file paths. 
 In this context, it's used to create a relative file path. So, by concatenating the dot with 
 q.pathname, you're essentially creating a file path that's relative to the current directory.
