@@ -6,4 +6,5 @@ fs.appendFile('myNewFile.txt', 'Hello, content', function (err) {
 });
 
 // A new file name myNewFile.txt created with content Hello, content
-// If we run the code again 2nd, 3rd .. times, in the same file myNewFile.txt, content is repeated again i.e 2 ,3 .. and so on times 
+// The fs.appendFile() method appends the specified content at the end of the specified file:
+// i.e. If content is changed, new changed contents gets addup at the end of content
