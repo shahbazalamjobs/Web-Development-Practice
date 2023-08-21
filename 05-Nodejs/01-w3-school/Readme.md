@@ -1,27 +1,26 @@
 
 
 Syntax:
-
 ES6 modules use import and export statements.
 CommonJS uses require() to import and module.exports or exports to export.
-Scope:
 
+Scope:
 ES6 modules have their own scope, making imported items more encapsulated.
 CommonJS modules allow modifications to exported objects after they're exported.
-Loading:
 
+Loading:
 ES6 modules load asynchronously, potentially improving performance.
 CommonJS modules load synchronously, which can block execution.
-Optimization:
 
+Optimization:
 ES6 modules are statically analyzable, enabling better optimizations.
 CommonJS modules are dynamically evaluated, which can limit certain optimizations.
-Browser Support:
 
+Browser Support:
 ES6 modules are natively supported in modern browsers with type="module".
 CommonJS modules need bundlers or transpilers for browser usage.
-Node.js Usage:
 
+Node.js Usage:
 ES6 modules require changes in module loading and use .mjs extension.
 CommonJS modules are the default in Node.js and use .js extension.
 
@@ -67,9 +66,9 @@ console.log(mathUtils.add(5, 3));      // Output: 8
 console.log(mathUtils.subtract(10, 4)); // Output: 6
 ```
 
-In the ES6 example, the `import` statement is used to import specific functions from the `mathUtils.js` module, and the `export` statements are used to export functions from that module.
+- In the ES6 example, the `import` statement is used to import specific functions from the `mathUtils.js` module, and the `export` statements are used to export functions from that module.
 
-In the CommonJS example, the `require()` function is used to import the entire `mathUtils.js` module, and functions are accessed using the `mathUtils` object.
+- In the CommonJS example, the `require()` function is used to import the entire `mathUtils.js` module, and functions are accessed using the `mathUtils` object.
 
-Please note that the ES6 example requires proper environment setup and module loading configuration, while the CommonJS example is suitable for the default behavior in Node.js.
+- Please note that the ES6 example requires proper environment setup and module loading configuration, while the CommonJS example is suitable for the default behavior in Node.js.
 
