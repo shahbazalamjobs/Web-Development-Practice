@@ -80,3 +80,17 @@ console.log(mathUtils.subtract(10, 4)); // Output: 6
 
 URL parsing is the process of breaking down a web address (URL) into its individual parts, like the protocol, domain, path, query parameters, and more. This helps software understand and work with URLs for tasks like fetching web content, creating links, and handling data from web addresses.
 
+
+---
+
+
+| Aspect        | Packages                    | Modules                | Utilities                 | Dependencies              |
+|---------------|-----------------------------|------------------------|---------------------------|---------------------------|
+| Definition    | Collections of related code, resources, and configuration files | Self-contained units of code encapsulating functionality | Reusable functions/tools for common tasks | External components needed for functionality |
+| Scope         | Can include multiple modules | Individual units of code | Can include multiple functions | External code/packages/modules |
+| Distribution  | Can be published to package registries | Part of the program structure | Not typically distributed independently | Installed using package managers |
+| Reusability   | Can be reused across different projects | Can be reused within the same project | Reusable functions across projects | Can be reused across projects |
+| Encapsulation | Contains various modules or code files | Provides isolated scope | Contains related functions | Required for specific functionality |
+| Purpose       | Provides a set of related functionalities | Organizes and segments code | Provides common solutions | Makes external functionality available |
+| Examples      | npm packages, Python packages | JavaScript ES6 modules | lodash library, moment.js | Express.js, axios library |
+
