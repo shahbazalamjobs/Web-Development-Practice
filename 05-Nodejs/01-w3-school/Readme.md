@@ -98,7 +98,7 @@ URL parsing is the process of breaking down a web address (URL) into its individ
 ---
 
 ### HTML form 
-
+```html
 <form>: This is an HTML element used to create a form on the page. Forms are used to gather user input 
 and send it to the server for processing.
 
@@ -122,4 +122,4 @@ field when the form is submitted to the server.
 
 type="submit": The type attribute specifies the type of button. In this case, it's a submit button, which,
  when clicked, will trigger the form submission.
-
+```
