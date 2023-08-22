@@ -98,7 +98,7 @@ URL parsing is the process of breaking down a web address (URL) into its individ
 ---
 
 ### HTML form 
-```html
+```
 <form>: This is an HTML element used to create a form on the page. Forms are used to gather user input 
 and send it to the server for processing.
 
