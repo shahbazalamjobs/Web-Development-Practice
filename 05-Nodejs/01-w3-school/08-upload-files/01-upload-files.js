@@ -9,7 +9,6 @@
 // Import the required modules
 import formidable from "formidable";  // For handling form data, including file uploads
 import http from "http";
-// Define the port number
 const port = 8080;
 
 // Create an HTTP server
