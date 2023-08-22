@@ -12,7 +12,7 @@ const transporter = nodemailer.createTransport({
 // Setup email data
 const mailOptions = {
     from: 'your_email@gmail.com', // Sender's email address
-    to: 'recipient@example.com', // Recipient's email address, can add more using ','
+    to: 'recipient@example.com', // Recipient's email address, can add more like this 'a1@mail.in, a2@mail.in, a3@mail.in'
     subject: 'Hello from Node.js!', // Subject line
     text: 'This is a test email sent from Node.js using nodemailer.', // Plain text body
     html: '<p>This is a <b>test</b> email sent from <i>Node.js</i> using <strong>nodemailer</strong>.</p>' // HTML body
