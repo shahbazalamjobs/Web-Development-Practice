@@ -1,16 +1,19 @@
+// This code upload the file then submit, after submit it gives error
+
 // Install formidable: npm install formidable
 // The formidable module helps in working with file uploads
 
 // Create a web page that allows users to upload files to your server
 
-import formidable from "formidable";
-import http from "http";
-import fs from "fs";
 
+// Import the required modules
+import formidable from "formidable";  // For handling form data, including file uploads
+import http from "http";
+// Define the port number
 const port = 8080;
 
+// Create an HTTP server
 const server = http.createServer((req, res) => {
-
     // Parse the uploaded file once it reaches the server
 
     // Check if the URL is '/fileupload' and the method is POST
@@ -18,13 +21,13 @@ const server = http.createServer((req, res) => {
         // Create a new instance of IncomingForm to parse the form data
         var form = new formidable.IncomingForm();
 
-        // Parse the form data  
+        // Parse the form data
         form.parse(req, function (err, fields, files) {
             // Get the temporary path of the uploaded file on the server
             var oldpath = files.filetoupload.path;
 
             // Define the new path where the file will be moved
-            var newpath = 'C:/Users/Your Name/' + files.filetoupload.name;
+            var newpath = 'C:/Users/hp/01-Code/' + files.filetoupload.name;
 
             // Move the uploaded file to the specified new path
             fs.rename(oldpath, newpath, function (err) {
@@ -32,6 +35,7 @@ const server = http.createServer((req, res) => {
                 if (err) throw err;
                 res.writeHead(200, { 'Content-Type': 'text/html' });
                 res.write('File uploaded and moved!');
+                console.log("File uploaded");
                 res.end();
             });
         });
@@ -50,6 +54,7 @@ const server = http.createServer((req, res) => {
     }
 });
 
+// Start the server
 server.listen(port, () => {
     console.log(`Server is running at port: ${port}`);
 });
