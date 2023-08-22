@@ -94,3 +94,34 @@ URL parsing is the process of breaking down a web address (URL) into its individ
 | Purpose       | Provides a set of related functionalities | Organizes and segments code | Provides common solutions | Makes external functionality available |
 | Examples      | npm packages, Python packages | JavaScript ES6 modules | lodash library, moment.js | Express.js, axios library |
 
+
+---
+
+
+/*
+
+<form>: This is an HTML element used to create a form on the page. Forms are used to gather user input 
+and send it to the server for processing.
+
+action="/upload": The action attribute specifies the URL to which the form data will be sent when the 
+user submits the form. In this case, it's set to "/upload", which means the data will be sent to the 
+server's "/upload" endpoint.
+
+method="post": The method attribute specifies the HTTP method used to send the form data. In this case,
+ it's set to "post", which means the data will be sent in the body of an HTTP POST request.
+
+enctype="multipart/form-data": The enctype attribute specifies how the form data should be encoded before
+sending it to the server. When dealing with file uploads, multipart/form-data is used to handle binary
+data like files.
+
+<input>: This is an HTML element used to create input fields within the form. In this case, the input type 
+is set to "file", which allows the user to select a file from their local device.
+
+name="file": The name attribute specifies the name of the input field. This name is used to identify the 
+field when the form is submitted to the server.
+<button>: This is an HTML element used to create a button within the form.
+
+type="submit": The type attribute specifies the type of button. In this case, it's a submit button, which,
+ when clicked, will trigger the form submission.
+
+*/
