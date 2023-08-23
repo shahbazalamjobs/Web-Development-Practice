@@ -1,10 +1,12 @@
 
 # How much JavaScript do you need to know to use Node.js?
 Resources: 
-1. [W3 School](https://www.w3schools.com/js/default.asp)
-2. [Book](https://flaviocopes.com/book/js/)
+1. W3 School [W3 School](https://www.w3schools.com/js/default.asp)
+2. Book [Book](https://flaviocopes.com/book/js/)
 
 ---
+
+## First read from `freecodecamp` article then `MDN` for extra
 
 1. Lexical Structure
 2. Expressions
