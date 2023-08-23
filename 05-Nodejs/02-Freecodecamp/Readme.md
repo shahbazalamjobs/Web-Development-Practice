@@ -232,3 +232,152 @@ To sum up, you can utilize `module.exports` multiple times in your Node.js code.
 
 ---
 
+
+# Types Of Modules in Node
+
+There are 2 types of modules in NodeJS:
+
+- Built In Modules: These are modules included in Node by default, so you can use them without installation. You just need to import them and get started.
+- External Modules: These are modules created by other developers which are not included by default. So you need to install them first before using them.
+
+![image](https://github.com/shahbazalamjobs/Web-Development-Practice/assets/125631878/c6b082d2-90f8-4e7e-9aca-7e803acb6895)
+
+
+---
+
+1. OS Module
+
+```js
+const os = require('os')
+
+// os.uptime()
+const systemUptime = os.uptime();
+
+// os.userInfo()
+const userInfo = os.userInfo();
+
+// We will store some other information about my WindowsOS in this object:
+const otherInfo = {
+    name: os.type(),
+    release: os.release(),
+    totalMem: os.totalmem(),
+    freeMem: os.freemem(),
+}
+
+// Let's Check The Results:
+console.log(systemUptime);
+console.log(userInfo);
+console.log(otherInfo);
+```
+
+Output:
+
+```
+521105
+{
+	uid: -1,
+	gid: -1,
+	username: 'krish',
+	homedir: 'C:\\Users\\krish',
+	shell: null
+}
+{
+	name: 'Windows_NT',
+	release: '10.0.22621',
+	totalMem: 8215212032,
+	freeMem: 1082208256
+}
+```
+os.uptime() tells the system uptime in seconds.
+os.userInfo() gives the information about the current user.
+os.type() - Tells the name of the Operating System
+os.release() - Tells the release version of the Operating System
+os.totalMem() - Tells the total amount of memory available in bytes
+os.freeMem() - Tells the total amount of free memory available in bytes
+
+---
+
+2. Path Module
+
+```js
+// Import 'path' module using the 'require()' method:
+const path = require('path')
+
+// Assigning a path to the myPath variable
+const myPath = '/mnt/c/Desktop/NodeJSTut/app.js'
+
+const pathInfo = {
+    fileName: path.basename(myPath),
+    folderName: path.dirname(myPath),
+    fileExtension: path.extname(myPath),
+    absoluteOrNot: path.isAbsolute(myPath),
+    detailInfo: path.parse(myPath),
+}
+
+// Let's See The Results:
+console.log(pathInfo);
+```
+
+```
+{
+  fileName: 'app.js',
+  folderName: '/mnt/c/Desktop/NodeJSTut',
+  fileExtension: '.js',
+  absoluteOrNot: true,
+  detailInfo: {
+    root: '/',
+    dir: '/mnt/c/Desktop/NodeJSTut',
+    base: 'app.js',
+    ext: '.js',
+    name: 'app'
+  }
+}
+```
+
+
+1. **Path Separators:**
+   - Windows uses backslash (`\`) as the separator in file paths.
+   - macOS/Linux use forward slash (`/`) as the separator.
+   - Example:
+     ```javascript
+     // Windows
+     console.log('\\'); // Outputs: \
+
+     // macOS/Linux
+     console.log('/'); // Outputs: /
+     ```
+
+2. **Root Directory for User's Files:**
+   - Windows: `C:\Users\username`
+   - macOS/Linux: `/Users/username/`
+
+3. **Path Module Functions:**
+   - `path.sep`: System-specific path separator.
+     ```javascript
+     console.log(path.sep); // \ (Windows) or / (macOS/Linux)
+     ```
+
+   - `path.join(...)`: Joins paths using system-specific separator.
+     ```javascript
+     console.log(path.join('folder1', 'folder2', 'file.txt'));
+     // Outputs: folder1\folder2\file.txt (Windows)
+     // Outputs: folder1/folder2/file.txt (macOS/Linux)
+     ```
+
+   - `path.resolve(...)`: Joins paths with the absolute path of the current working directory.
+     ```javascript
+     console.log(path.resolve('folder1', 'folder2', 'file.txt'));
+     // Assuming current working directory is C:\Desktop\NodeJSTut (Windows)
+     // Outputs: C:\Desktop\NodeJSTut\folder1\folder2\file.txt
+     ```
+
+Remember to import the `path` module before using its functions:
+```javascript
+const path = require('path');
+```
+
+---
+ 
+3. Module
+6. 
+
