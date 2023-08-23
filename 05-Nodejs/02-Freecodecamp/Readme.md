@@ -144,3 +144,90 @@ Hello John
 Hello Peter
 Hello Rohit
 ```
+
+---
+
+
+# Note on `module.exports`
+
+In the previous section of the article, we explored how to utilize `module.exports`. However, it's crucial to delve a bit deeper into its functionality. This section serves as a mini tutorial, illustrating how we can export both single variables/functions and multiple variables/functions using `module.exports`. Let's dive in:
+
+`module.exports` is a special object in Node.js that facilitates the exportation of functions, objects, or values from a module, enabling other modules to access and utilize them. Here's an example showcasing the use of `module.exports` to export a function from a module:
+
+```js
+// myModule.js
+
+function myFunction() {
+  console.log('Hello from myFunction!');
+}
+
+module.exports = myFunction;
+```
+
+In this instance, we define `myFunction` and then export it using `module.exports`. Other modules can now require this module and utilize the exported function:
+
+```js
+// app.js
+
+const myFunction = require('./myModule');
+
+myFunction(); // logs 'Hello from myFunction!'
+```
+
+This situation appears seamless and all is well. However, complexities arise when we must export multiple functions and variables from a single file. The issue lies in the fact that using `module.exports` multiple times in one module will replace the previously assigned value with the new one. Consider this code:
+
+```js
+// module.js
+
+function myFunction() {
+  console.log('Hello from myFunction!');
+}
+
+function myFunction2() {
+  console.log('Hello from myFunction2!');
+}
+
+// First Export
+module.exports = myFunction;
+
+// Second Export
+module.exports = myFunction2;
+```
+
+In this example, we initially export `myFunction()`. Yet, we subsequently overwrite `module.exports` with a new function, `myFunction2()`. Consequently, only the second export statement will take effect, and `myFunction()` will not be exported.
+
+To overcome this predicament, you can assign `module.exports` to an object containing all the functions you intend to export, like so:
+
+```js
+// myModule.js
+
+function myFunction1() {
+  console.log('Hello from myFunction1!');
+}
+
+function myFunction2() {
+  console.log('Hello from myFunction2!');
+}
+
+module.exports = {
+  foo: 'bar',
+  myFunction1: myFunction1,
+  myFunction2: myFunction2
+};
+```
+
+In this example, we export an object with three properties: `foo`, `myFunction1`, and `myFunction2`. Other modules can require this module and access these properties:
+
+```js
+// app.js
+
+const myModule = require('./myModule');
+
+console.log(myModule.foo); // logs 'bar'
+myModule.myFunction1(); // logs 'Hello from myFunction1!'
+myModule.myFunction2(); // logs 'Hello from myFunction2!'
+```
+
+To sum up, you can utilize `module.exports` multiple times in your Node.js code. However, it's essential to recognize that each new assignment will supersede the previous one. To efficiently export multiple items, use an object to consolidate these exports.
+```
+
