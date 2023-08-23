@@ -1,16 +1,17 @@
 
 # How much JavaScript do you need to know to use Node.js?
-
-For basic read from here: https://flaviocopes.com/book/js/
+Resources: 
+1. [W3 School](https://www.w3schools.com/js/default.asp)
+2. [Book](https://flaviocopes.com/book/js/)
 
 1. Lexical Structure
 2. Expressions
 3. Data Types
 4. Classes
 5. Variables
-6. Functions
-7. `this` Operator
-8. Arrow Functions
+6. Functions : [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
+7. `this` Operator [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) [Freecodecamp](https://www.freecodecamp.org/news/the-this-keyword-in-javascript/)
+8. Arrow Functions [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) [FreeCodeCamp](https://www.freecodecamp.org/news/arrow-function-javascript-tutorial-how-to-declare-a-js-function-with-the-new-es6-syntax/) 
 9. Loops
 10. Scopes
 11. Arrays
