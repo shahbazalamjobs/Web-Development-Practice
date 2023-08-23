@@ -6,7 +6,7 @@ Resources:
 
 ---
 
-## First read from `freecodecamp` article then `MDN` for extra
+## First read from `freecodecamp / W3 School` article then `MDN` for extra
 
 1. Lexical Structure
 2. Expressions
