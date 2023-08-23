@@ -229,5 +229,6 @@ myModule.myFunction2(); // logs 'Hello from myFunction2!'
 ```
 
 To sum up, you can utilize `module.exports` multiple times in your Node.js code. However, it's essential to recognize that each new assignment will supersede the previous one. To efficiently export multiple items, use an object to consolidate these exports.
-```
+
+---
 
