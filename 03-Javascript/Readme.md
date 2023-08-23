@@ -11,15 +11,15 @@ Resources:
 3. Data Types
 4. Classes
 5. Variables
-6. Functions : [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions) 
-7. `this` Operator 1. [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) 2. [Freecodecamp](https://www.freecodecamp.org/news/the-this-keyword-in-javascript/)
-9. Arrow Functions [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) [FreeCodeCamp](https://www.freecodecamp.org/news/arrow-function-javascript-tutorial-how-to-declare-a-js-function-with-the-new-es6-syntax/) 
-10. Loops
-11. Scopes
-12. Arrays
-13. Template Literals
-14. Strict Mode
-15. ECMAScript 2015 (ES6) and Beyond
+6. Functions : 
+7. `this` Operator : 
+8. Arrow Functions
+9. Loops
+10. Scopes
+11. Arrays
+12. Template Literals
+13. Strict Mode
+14. ECMAScript 2015 (ES6) and Beyond
 
 With those concepts in mind, you are well on your road to become a proficient JavaScript developer, in both the browser and in Node.js.
 
