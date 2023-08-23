@@ -450,5 +450,10 @@ fs.readFile('./myFolder/myFile.txt', {encoding: 'utf-8'}, (err, data) => {
 - If the readFile() method is called without providing an encoding parameter, you will see a result similar to this printed in the console:
 `<Buffer 54 68 69 73 20 69 73 20 73 6f 6d 65 20 64 61 74 61 20 69 6e 20 61 20 66 69 6c 65>`
 
+- This raw buffer is difficult to read and interpret as it represents the contents of the file in binary form. To convert the buffer to a readable string, you can specify an encoding parameter when calling readFile().
+
+- In our case, we specified the 'utf8' encoding as the second parameter of the readFile() method. This tells Node.js to interpret the file contents as a string using the UTF-8 character encoding, thus you see the original data printed in the console. 
+
+
 6. 
 
