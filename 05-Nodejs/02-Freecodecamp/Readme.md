@@ -98,51 +98,38 @@ Understanding and utilizing global variables can significantly contribute to the
 
 # Modules in NodeJs
 
-In Node.js, modules are fundamental units of code that offer reusability and allow you to perform specific tasks or provide distinct functionality.
+In Node.js, a module is essentially a reusable block of code that can be used to perform a specific set of tasks or provide a specific functionality. A module can contain variables, functions, classes, objects, or any other code that can be used to accomplish a particular task or set of tasks.
 
-**Main Points:**
+The primary purpose of using modules in Node.js is to help organize code into smaller, more manageable pieces. A module can then be imported at any time and used flexibly, which helps in creating reusable code components that can be shared across multiple projects.
 
-1. **Understanding Modules:**
-   - Modules in Node.js encapsulate code for specific purposes.
-   - Modules can hold variables, functions, classes, and more.
-   - Their primary purpose is to enhance code organization and reusability.
+To understand this, consider this example: Let's say you have defined lots of functions in your code that work with a huge volume of JSON data.
 
-2. **Advantages of Modularization:**
-   - Modules help break down code into manageable components.
-   - Importing modules enables flexible usage and sharing across projects.
-   - Managing large codebases becomes easier with modular design.
+Losing your sleep and increased anxiety levels are common side effects of keeping all this stuff (functions + data + some other logic) in one single file.
 
-3. **Example Use Case: Handling JSON Data and Functions:**
-   - Managing numerous functions for extensive JSON data manipulation.
-   - Aggregating all functions, data, and logic into one file results in complexity.
-   - Solution involves segregating functions and data into separate files for clarity.
-   - Modules facilitate seamless import of data and functions, leading to efficient code organization.
+So you, being a clever programmer, thought of making a separate file for the JSON data and a separate file for storing all the functions. Now, you can simply import the data and the functions whenever you want and use them accordingly. This method increases efficiency as your file size reduces drastically. This is the concept of modules!
 
-4. **Creating Custom Modules:**
-   - Demonstrating the creation of a custom module using a greeting function.
+## Creating Your Own Modules
 
-5. **Code Illustrations:**
+Let's see how we can make our own modules. For this, we are going to write some code where we will be defining a function called `sayHello()` in a file called `hello.js`. This function will accept a name as the parameter and simply print a greeting message in the console.
 
-**Code within `hello.js` File:**
+We will then import it in another file called `app.js` and use it there. How interesting, right? 😂 Let's check out the code:
+
+### hello.js
 
 ```javascript
 function sayHello(name){
     console.log(`Hello ${name}`);
 }
 
-export default sayHello;
+module.exports = sayHello;
 ```
 
-**Code within `app.js` File:**
+## app.js
 
-```javascript
-import customGreeting from './hello.js';
+```js
+const sayHello = require('./hello.js');
 
-customGreeting('John');
-customGreeting('Peter');
-customGreeting('Rohit');
+sayHello('John');
+sayHello('Peter');
+sayHello('Rohit');
 ```
-
-In this example, the `hello.js` module exports the `sayHello` function, while the `app.js` file imports and uses it to greet different names.
-
-By harnessing the power of modules, Node.js developers can structure code more effectively, promote reusability, and create applications that are easier to manage and extend.
