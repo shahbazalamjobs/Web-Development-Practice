@@ -358,6 +358,7 @@ console.log(pathInfo);
      ```
 
    - `path.join(...)`: Joins paths using system-specific separator.
+   - The path.join() function accepts path(s) as strings. It then joins those paths using the system specific path separator and returns the joined path.
      ```javascript
      console.log(path.join('folder1', 'folder2', 'file.txt'));
      // Outputs: folder1\folder2\file.txt (Windows)
@@ -365,6 +366,7 @@ console.log(pathInfo);
      ```
 
    - `path.resolve(...)`: Joins paths with the absolute path of the current working directory.
+   - The path.resolve() function just joins the different paths provided to it using the system specific path separator and then appends the final output to the absolute path of the present working directory.
      ```javascript
      console.log(path.resolve('folder1', 'folder2', 'file.txt'));
      // Assuming current working directory is C:\Desktop\NodeJSTut (Windows)
@@ -378,6 +380,6 @@ const path = require('path');
 
 ---
  
-3. Module
+3. FS Module
 6. 
 
