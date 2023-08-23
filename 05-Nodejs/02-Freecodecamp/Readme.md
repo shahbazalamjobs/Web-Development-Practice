@@ -133,3 +133,14 @@ sayHello('John');
 sayHello('Peter');
 sayHello('Rohit');
 ```
+
+
+In this case, the file hello.js can be referred to as the module. Every module has an object called exports which contains everything you want to export from the module, such as variables or functions. In our case, we're defining a function in the hello.js file and directly exporting it.
+
+The app.js file imports the sayHello() function from hello.js and stores it in the sayHello variable. To import something from a module, we use the require() method, providing the path to the module. Now we can simply invoke the function by passing a name as a parameter. Running the code in the app.js file will produce the following output:
+
+```
+Hello John
+Hello Peter
+Hello Rohit
+```
