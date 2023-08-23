@@ -1,6 +1,8 @@
 
 # How much JavaScript do you need to know to use Node.js?
 
+For basic read from here: https://flaviocopes.com/book/js/
+
 1. Lexical Structure
 2. Expressions
 3. Data Types
