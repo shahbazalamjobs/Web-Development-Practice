@@ -245,7 +245,7 @@ There are 2 types of modules in NodeJS:
 
 ---
 
-1. OS Module
+# 1. OS Module
 
 ```js
 const os = require('os')
@@ -297,7 +297,7 @@ os.freeMem() - Tells the total amount of free memory available in bytes
 
 ---
 
-2. Path Module
+# 2. Path Module
 
 ```js
 // Import 'path' module using the 'require()' method:
@@ -380,6 +380,75 @@ const path = require('path');
 
 ---
  
-3. FS Module
+# 3. FS Module (File System)
+
+This module helps you with file handling operations such as:
+
+- Reading a file (sync or async way)
+- Writing to a file (sync or async way)
+- Deleting a file
+- Reading the contents of a director
+- Renaming a file
+- Watching for changes in a file, and much more
+
+### 1)  Create a directory using fs.mkdir()
+- fs.mkdir() function in Node.js creates a new directory
+- It takes two arguments: the path of the directory to be created and an optional callback function that gets executed when the operation is complete.
+
+path: 
+  - Here, path refers to the location where you want to create a new folder.
+  - This can be an absolute or a relative path.
+  - In my case, the path to the present working directory (the folder I am currently in), is: C:\Desktop\NodeJSTut. So, Let's create a folder in the NodeJSTut directory called myFolder.
+
+callback function: 
+  - The purpose of the callback function is to notify that the directory creation process has completed.
+  - This is necessary because the fs.mkdir() function is asynchronous, meaning that it does not block the execution of the rest of the code while the operation is in progress.
+  - Instead, it immediately returns control to the callback function, allowing it to continue executing other tasks. Once the directory has been created, the callback function is called with an error object (if any) and any other relevant data related to the operation.
+  - In the below code, we are just using it to display a success message in the console or any error.
+
+```js
+// Import fs module
+const fs = require('fs');
+
+// Present Working Directory: C:\Desktop\NodeJSTut
+// Making a new directory called ./myFolder:
+
+fs.mkdir('./myFolder', (err) => {
+    if(err){
+    	console.log(err);
+    } else{
+    	console.log('Folder Created Successfully');
+    }
+})
+```
+
+### 2) create and write to a file asynchronously using `fs.writeFile()`
+
+- `writeFile()` is a method provided by the fs (file system) module in Node.js. 
+- It is used to write data to a file asynchronously.
+- The method takes three arguments:
+  1. The path of the file to write to (including the file name and extension)
+  2. The data to write to the file (as a string or buffer)
+  3. An optional callback function that is called once the write operation is complete or an error occurs during the write operation.
+
+```js
+const fs = require('fs');
+
+fs.readFile('./myFolder/myFile.txt', {encoding: 'utf-8'}, (err, data) => {
+    if(err){
+    	console.log(err);
+        return;
+    } else {
+    	console.log('File read successfully! Here is the data');
+        console.log(data);
+    }
+})
+```
+
+- The encoding parameter in the fs.readFile() method of Node.js is used to specify the character encoding used to interpret the file data. By default, if no encoding parameter is provided, the method returns a raw buffer.
+
+- If the readFile() method is called without providing an encoding parameter, you will see a result similar to this printed in the console:
+`<Buffer 54 68 69 73 20 69 73 20 73 6f 6d 65 20 64 61 74 61 20 69 6e 20 61 20 66 69 6c 65>`
+
 6. 
 
