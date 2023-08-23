@@ -455,5 +455,96 @@ fs.readFile('./myFolder/myFile.txt', {encoding: 'utf-8'}, (err, data) => {
 - In our case, we specified the 'utf8' encoding as the second parameter of the readFile() method. This tells Node.js to interpret the file contents as a string using the UTF-8 character encoding, thus you see the original data printed in the console. 
 
 
-6. 
 
+
+### 3) Reading and Writing to a File Synchronously:
+
+Instead of the asynchronous file read and write methods, there are synchronous alternatives called `readFileSync()` and `writeFileSync()`. Because they are synchronous, they should be used within a `try...catch` block to handle potential errors.
+
+In the following code, a new file (`./myFolder/myFileSync.txt`) is created and written to using `writeFileSync()`. Then, the file's content is read using `readFileSync()`, and the data is displayed in the console:
+
+
+```js
+const fs = require('fs');
+
+try{
+    // Write to file synchronously
+    fs.writeFileSync('./myFolder/myFileSync.txt', 'myFileSync says Hi');
+    console.log('Write operation successful');
+    
+    // Read file synchronously
+    const fileData = fs.readFileSync('./myFolder/myFileSync.txt', 'utf-8');
+    console.log('Read operation successful. Here is the data:');
+    console.log(fileData);
+    
+} catch(err){
+    console.log('Error occurred!');
+    console.log(err);
+}
+```
+
+Output:
+```
+Write operation successful
+Read operation successful. Here is the data:
+myFileSync says Hi
+```
+
+### 4) Read the contents of a directory using fs.readdir()
+
+
+- 2 files are present in the myFolder directory, i.e, myFile.txt and myFileSync.txt.
+- The fs module provides you with readdir() function using which you can read the contents of a directory (the files and folders present in the directory).
+
+```js
+const fs = require('fs');
+
+fs.readdir('./myFolder', (err, files) => {
+    if(err){
+    	console.log(err);
+        return;
+    }
+    console.log('Directory read successfully! Here are the files:');
+    console.log(files);
+})
+```
+Output: `[ 'myFile.txt', 'myFileSync.txt' ]`
+
+### 5) Rename a file using fs.rename()
+
+- The method takes two arguments, the current file path and the new file path, and a callback function that is executed when the renaming is complete.
+- Syntax:  `fs.rename(oldPath, newPath, callback); `
+
+```
+oldPath (string) - The current file path
+newPath (string) - The new file path
+callback (function) - A callback function to be executed when the renaming is complete. 
+This function takes an error object as its only parameter.
+```
+
+-  Lets rename the newFile.txt file to newFileAsync.txt:
+```js
+const fs = require('fs');
+
+fs.rename('./newFolder/newFile.txt', './newFolder/newFileAsync.txt', (err)=>{
+    if(err){
+    	console.log(err);
+        return;
+    }
+    console.log('File renamed successfully!')
+})
+```
+
+### 6) Delete a file using `fs.unlink()`
+
+```js
+const fs = require('fs');
+
+fs.unlink('./myFolder/myFileSync.txt', (err) => {
+    if(err){
+        console.log(err);
+        return;
+    }
+    console.log('File Deleted Successfully!')
+})
+```
