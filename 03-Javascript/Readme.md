@@ -1,5 +1,5 @@
 
-# JavaScript do you need to know to use Node.js?
+# How much JavaScript do you need to know to use Node.js?
 
 1. Lexical Structure
 2. Expressions
