@@ -3,6 +3,7 @@
 Resources: 
 1. W3 School [W3 School](https://www.w3schools.com/js/default.asp)
 2. Book [Book](https://flaviocopes.com/book/js/)
+3. 30 days of Js: [Link](https://github.com/Asabeneh/30-Days-Of-JavaScript)
 
 ---
 
