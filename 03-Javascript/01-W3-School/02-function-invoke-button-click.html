@@ -1,0 +1,19 @@
+<!-- The function is invoked (called) when a button is clicked:-->
+<!-- a JavaScript function is placed in the <body> section of an HTML page -->
+
+<html>
+<head>
+</head>
+<body>
+    <h1> Hello world I am Shahbaz </h1>
+    <p id="demo"> Normal text before button clicked </p>
+
+    <button onclick='myFunction()'>Click Me</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "This is changed text after clicking button";
+        }
+    </script>
+</body>
+</html>
