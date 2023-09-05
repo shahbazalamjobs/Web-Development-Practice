@@ -13,3 +13,8 @@ reducing bugs and making code easier to understand.
 - While both let and const declarations are moved to the top of their containing block or scope during the compilation phase, they are not initialized.
 - This means that you can't access their values before the actual declaration in your code, unlike var, which is initialized with undefined.
 - This behavior is known as the "temporal dead zone" (TDZ), and trying to access a let or const variable before its declaration will result in a ReferenceError.
+
+## string operation
+
+- let x = 16 + 4 + "Volvo";  // 20Volvo
+- let x = "Volvo" + 16 + 4;  // Volvo164
