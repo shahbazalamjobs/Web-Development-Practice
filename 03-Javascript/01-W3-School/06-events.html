@@ -43,24 +43,33 @@ web applications. Here are some common events in JavaScript:
   <!-- HTML input element -->
   <input type="text" id="myInput" placeholder="Type something...">
 
+  <!-- Paragraph element to display the key clicked -->
+  <p id="keyDisplay"></p>
+
   <script>
     // Get the input element by its ID
     const myInput = document.getElementById("myInput");
 
+    // Get the paragraph element by its ID
+    const keyDisplay = document.getElementById("keyDisplay");
+
     // Add a keydown event listener to the input
     myInput.addEventListener("keydown", function(event) {
       // Code to execute when a key is pressed down
-      console.log(`Key down: ${event.key}`);
+      const keyPressed = event.key;
+      keyDisplay.textContent = `Key down: ${keyPressed}`;
     });
 
     // Add a keyup event listener to the input
     myInput.addEventListener("keyup", function(event) {
       // Code to execute when a key is released
-      console.log(`Key up: ${event.key}`);
+      const keyReleased = event.key;
+      keyDisplay.textContent = `Key up: ${keyReleased}`;
     });
   </script>
 </body>
 </html>
+
 
 
 <!-- ____________ 3. Form Events _______________-->
