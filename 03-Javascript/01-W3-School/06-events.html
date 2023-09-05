@@ -1,0 +1,131 @@
+<!-- 
+Events:
+
+In JavaScript, events are actions or occurrences that happen in the browser, such as a user clicking a button, 
+moving the mouse, or pressing a key. JavaScript allows you to capture and respond to these events in your 
+web applications. Here are some common events in JavaScript:
+
+-->
+
+<!-- ____________ 1. Click Events _______________-->
+
+
+<html>
+<head>
+  <title>Click Event Example</title>
+</head>
+<body>
+  <!-- HTML button element -->
+  <button id="myButton">Click Me</button>
+
+  <script>
+    // Get the button element by its ID
+    const myButton = document.getElementById("myButton");
+
+    // Add a click event listener to the button
+    myButton.addEventListener("click", function() {
+      // Code to execute when the button is clicked
+      alert("Button clicked!");
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- ____________ 2.Keyboard Events _______________-->
+
+
+<html>
+<head>
+  <title>Keyboard Events Example</title>
+</head>
+<body>
+  <!-- HTML input element -->
+  <input type="text" id="myInput" placeholder="Type something...">
+
+  <script>
+    // Get the input element by its ID
+    const myInput = document.getElementById("myInput");
+
+    // Add a keydown event listener to the input
+    myInput.addEventListener("keydown", function(event) {
+      // Code to execute when a key is pressed down
+      console.log(`Key down: ${event.key}`);
+    });
+
+    // Add a keyup event listener to the input
+    myInput.addEventListener("keyup", function(event) {
+      // Code to execute when a key is released
+      console.log(`Key up: ${event.key}`);
+    });
+  </script>
+</body>
+</html>
+
+
+<!-- ____________ 3. Form Events _______________-->
+
+
+<html>
+<head>
+  <title>Form Events Example</title>
+</head>
+<body>
+  <!-- HTML form element -->
+  <form id="myForm">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Get the form element by its ID
+    const myForm = document.getElementById("myForm");
+
+    // Add a submit event listener to the form
+    myForm.addEventListener("submit", function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      
+      // Code to execute when the form is submitted
+      alert("Form submitted!");
+    });
+  </script>
+</body>
+</html>
+
+<!-- ____________ 4. Mouse Events _______________-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mouse Events Example</title>
+</head>
+<body>
+  <!-- HTML element for mouse events -->
+  <div id="myMouseElement" style="width: 100px; height: 100px; background-color: lightblue;"></div>
+
+  <script>
+    // Get the element for mouse events by its ID
+    const myMouseElement = document.getElementById("myMouseElement");
+
+    // Add a mouseover event listener
+    myMouseElement.addEventListener("mouseover", function() {
+      // Code to execute when the mouse pointer enters the element
+      myMouseElement.style.backgroundColor = "lightcoral";
+    });
+
+    // Add a mouseout event listener
+    myMouseElement.addEventListener("mouseout", function() {
+      // Code to execute when the mouse pointer leaves the element
+      myMouseElement.style.backgroundColor = "lightblue";
+    });
+
+    // Add a mousemove event listener
+    myMouseElement.addEventListener("mousemove", function(event) {
+      // Code to execute when the mouse moves over the element
+      console.log(`Mouse X: ${event.clientX}, Y: ${event.clientY}`);
+    });
+  </script>
+</body>
+</html>
