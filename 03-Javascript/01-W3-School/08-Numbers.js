@@ -1,5 +1,25 @@
 // Numbers
 
+const squareRoot = Math.sqrt(25); // Square root
+const absoluteValue = Math.abs(-7); // Absolute value
+
+const strNumber = '42';
+const numFromString = parseInt(strNumber); // Convert string to integer
+const strFromNum = numFromString.toString(); // Convert integer to string
+
+// NaN (Not-a-Number)
+const invalidResult = 0 / 0;     // NaN
+
+// Infinity and -Infinity
+const positiveInfinity = Infinity;
+const negativeInfinity = -Infinity;
+
+// Number Methods
+const num = 3.14159;
+const fixedNum = num.toFixed(2);      // Round to 2 decimal places
+const precisionNum = num.toPrecision(3); // 3 significant digits
+
+
 // JavaScript has only one type of number. Numbers can be written with or without decimals.
 
 // Numeric Literals
