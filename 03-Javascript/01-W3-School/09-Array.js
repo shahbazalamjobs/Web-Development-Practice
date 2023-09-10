@@ -100,9 +100,84 @@ text += "</ul>";
 
 document.getElementById("demo").innerHTML = text;
 
+// 15. New element can also be added to an array using the length property:
+
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Lemon";
+  document.getElementById("demo").innerHTML = fruits;
+}
+
+// 16. Adding elements with high indexes can create undefined "holes" in an array:
+
+const fruits = ["Banana", "Orange", "Apple"];
+fruits[6] = "Lemon";
+
+let fLen = fruits.length;
+let text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+
+/* o/p: 
+Banana
+Orange
+Apple
+undefined
+undefined
+undefined
+Lemon
+*/
+
+// 17. The Difference Between Arrays and Objects
+
+/*
+In JavaScript, arrays use numbered indexes.  
+In JavaScript, objects use named indexes.
+*/
+
+// 18. These two different statements both create a new empty array named points:
+
+const points = new Array();
+const points = [];
+
+// 19. These two different statements both create a new array containing 6 numbers:
+
+const points = new Array(40, 100, 1, 5, 25, 10);
+const points = [40, 100, 1, 5, 25, 10];
+
+// 20. The new keyword can produce some unexpected results:
+var points = new Array(40);
+document.getElementById("demo").innerHTML = points; 
+// o/p: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 
 
+// 21. Creating array using [] and new are not same
 
+// Create an array with one element:
+const points = [40];
 
+// Create an array with 40 undefined elements:
+const points = new Array(40); 
+document.getElementById("demo").innerHTML = points[0]; 
+// o/p: undefined
 
+// 22. How do I know if a variable is an array?
+
+// The problem is that the JavaScript operator typeof returns "object":
+
+const fruits = ["Banana", "Orange", "Apple"];
+let type = typeof fruits;
+
+// ECMAScript 5 Method Array.isArray(fruits);
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = Array.isArray(fruits);
+
+// Instanceof operator returns true if an object is created by a given constructor:
+var fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("demo").innerHTML = fruits instanceof Array;
 
