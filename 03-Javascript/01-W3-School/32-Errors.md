@@ -84,3 +84,27 @@ catch(err) {
  o/p: adddlert is not defined
 ```
 
+---
+
+### Error in Division
+
+```js
+function divide(a, b) {
+  if (b === 0) {
+    throw "Division by zero is not allowed.";
+  }
+  return a / b;
+}
+
+try {
+  const result = divide(10, 2);
+  console.log("Result:", result); // Output: Result: 5
+
+  // Uncomment the next line to trigger an error (division by zero)
+  // const errorResult = divide(8, 0);
+} catch (error) {
+  console.error("An error occurred:", error);
+} finally {
+  console.log("This block is always executed.");
+}
+```
