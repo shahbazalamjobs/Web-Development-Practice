@@ -7,38 +7,67 @@ Sets are similar to arrays, but they only store unique values, meaning no duplic
 You can create and manipulate sets using the Set constructor and its associated methods.
 */
 
-// Creating a Set
+// 1. Creating a Set
 const mySet = new Set(); // Creates an empty set
 
 const fruitSet = new Set(["apple", "banana", "orange"]); // Initializes a set with values
 
-// Adding and Removing Elements
+// 2. Adding and Removing Elements
 mySet.add("apple");
 mySet.add("banana");
 mySet.delete("banana");
 
-// Checking if an Element Exists
+
+  
+// 3. Create a Set
+const letters = new Set();
+
+// Create Variables
+const a = "a";
+const b = "b";
+const c = "c";
+
+// Add Variables to the Set
+letters.add(a);
+letters.add(b);
+letters.add(c);
+
+
+// 4. Checking if an Element Exists
 const hasBanana = mySet.has("banana"); // Returns false
 const hasGrape = mySet.has("grape");   // Returns false
 
-// Getting the Size of a Set
+// 5. Getting the Size of a Set
 const setSize = mySet.size;            // Returns 1
 
-// Iterating Over a Set
+// 6. Iterating Over a Set
 mySet.forEach((value) => {
   console.log(value);
 });
 // Output:
 // apple
 
-// Using for...of
+// 7. Using for...of
 for (const item of mySet) {
   console.log(item);
 }
 // Output:
 // apple
 
-// Converting a Set to an Array
+// 8. Converting a Set to an Array
 const myArray = Array.from(mySet);
 console.log(myArray);
 // Output: ["apple"]
+
+
+// Using For Each 
+const letters = new Set(["a","b","c"]);
+
+// List all Elements
+let text = "";
+letters.forEach (function(value) {
+  text += value + "<br>";
+})
+
+document.getElementById("demo").innerHTML = text;
+// o/p : a b c
