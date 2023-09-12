@@ -68,3 +68,19 @@ Here's an overview of how `throw` and `try...catch...finally` work: <br>
      ```
 
 Using `throw` and `try...catch...finally` allows you to gracefully handle exceptions in your JavaScript code, preventing unexpected crashes and providing error-handling mechanisms for various situations.
+
+---
+
+```js
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+```
+
+```
+ o/p: adddlert is not defined
+```
+
