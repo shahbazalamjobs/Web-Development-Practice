@@ -1,4 +1,5 @@
-## Advance Topics: Functions, Objects, Classes, Async/Await, DOM, API, AJAX, JSON,  
+## Advance Topics: 
+Functions, Objects, Classes, Async/Await, DOM, API, AJAX, JSON,  : [Link](https://www.w3schools.com/js/js_object_definition.asp)
 
 ## var, let, const
 
