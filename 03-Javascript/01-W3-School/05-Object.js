@@ -55,11 +55,11 @@ const car = {
 
 car.start(); // Output: "Engine started"
 car.stop();  // Output: "Engine stopped"
-Object Constructors:
-You can create multiple instances of objects using constructor functions or, in modern JavaScript, classes. This allows you to define a blueprint for creating similar objects.
 
-javascript
-Copy code
+/* Object Constructors:
+You can create multiple instances of objects using constructor functions or, in modern JavaScript, classes. 
+This allows you to define a blueprint for creating similar objects. */
+
 // Using constructor function
 function Person(firstName, lastName) {
   this.firstName = firstName;
@@ -77,11 +77,11 @@ class Animal {
 }
 
 const cat = new Animal("Whiskers", "Cat");
-Object Prototypes:
-JavaScript objects have a prototype chain that allows them to inherit properties and methods from other objects. You can add properties and methods to an object's prototype, which will be shared among all instances of that object.
 
-javascript
-Copy code
+/* Object Prototypes:
+JavaScript objects have a prototype chain that allows them to inherit properties and methods from other objects. 
+You can add properties and methods to an object's prototype, which will be shared among all instances of that object. */
+
 function Person(firstName, lastName) {
   this.firstName = firstName;
   this.lastName = lastName;
@@ -93,11 +93,11 @@ Person.prototype.getFullName = function() {
 
 const john = new Person("John", "Doe");
 console.log(john.getFullName()); // Output: "John Doe"
-Object Destructuring:
-You can extract values from an object and assign them to variables using object destructuring. This is a concise way to access object properties.
 
-javascript
-Copy code
+/* Object Destructuring:
+You can extract values from an object and assign them to variables using object destructuring. 
+This is a concise way to access object properties. */
+
 const person = {
   firstName: "John",
   lastName: "Doe",
@@ -107,11 +107,11 @@ const person = {
 const { firstName, lastName } = person;
 console.log(firstName); // Output: "John"
 console.log(lastName);  // Output: "Doe"
-Object Spread and Rest:
-JavaScript also provides the spread operator (...) for creating a shallow copy of an object and the rest operator (...) for collecting remaining properties into a new object.
 
-javascript
-Copy code
+/* Object Spread and Rest:
+JavaScript also provides the spread operator (...) for creating a shallow copy of an object and 
+the rest operator (...) for collecting remaining properties into a new object. */
+
 const original = { a: 1, b: 2 };
 const copy = { ...original, c: 3 }; // Spread operator
 console.log(copy); // Output: { a: 1, b: 2, c: 3 }
@@ -119,18 +119,21 @@ console.log(copy); // Output: { a: 1, b: 2, c: 3 }
 const { a, ...rest } = original; // Rest operator
 console.log(a);    // Output: 1
 console.log(rest); // Output: { b: 2 }
-Object Serialization:
-You can convert objects to JSON format using JSON.stringify() and parse JSON strings back into objects using JSON.parse().
 
-javascript
-Copy code
+/* Object Serialization:
+You can convert objects to JSON format using JSON.stringify() and parse JSON strings back into objects using JSON.parse(). */
+
+
 const person = { name: "Alice", age: 25 };
 const jsonStr = JSON.stringify(person);
 console.log(jsonStr); // Output: '{"name":"Alice","age":25}'
 
 const parsedObj = JSON.parse(jsonStr);
 console.log(parsedObj.name); // Output: "Alice"
-These are just a few of the many aspects of working with objects in JavaScript. Objects are a fundamental concept in the language and are used extensively in a wide range of applications, from managing data in web development to implementing complex data structures and algorithms.
+
+/* These are just a few of the many aspects of working with objects in JavaScript. 
+Objects are a fundamental concept in the language and are used extensively in a wide range of applications, 
+from managing data in web development to implementing complex data structures and algorithms. */
 
 
 /* _____________________Object Constructors:__________________________________ */
