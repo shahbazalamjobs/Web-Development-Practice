@@ -27,6 +27,12 @@
 11. Stay up-to-date with the latest industry trends and emerging technologies to continuously improve development practices.
 
 12. Contribute to improving development processes and workflows for enhanced team
+    
+13. Optimize website performance and loading speed, identifying and addressing bottlenecks and possible performance issues.
+Develop responsive UI components (i.e., data grids, filters, charts).
+
+14. Troubleshoot responsive, resolution, and cross-browser, cross-platform compatibility issues.
+Responsible for quickly prototyping design concepts. S/he should be familiar with wireframing tools such as Figma.
 
 ###  2. Dev
 
