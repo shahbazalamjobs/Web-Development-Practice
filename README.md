@@ -61,8 +61,6 @@
 
 ###  3. Devops
 
-Here's a numbered list of the items you've provided:
-
 1. Design, implement, and maintain cloud-based infrastructure using Kubernetes, Terraform, Docker, and other relevant technologies.
 
 2. Develop and maintain CI/CD pipelines for software delivery.
